@@ -1,0 +1,15 @@
+.super-links {
+  box-sizing: content-box;
+  background-color: teal;
+  box-shadow: black;
+  margin-top: 120px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.super {
+  color: white !important;
+  text-decoration: none !important;
+}
+.super:hover {
+  color: orangered !important;
+}
