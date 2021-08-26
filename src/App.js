@@ -23,6 +23,11 @@ import Blog4 from './Component/Blog4';
 import Blog5 from './Component/Blog5'
 import Blog6 from './Component/Blog6';
 import Blog7 from './Component/Blog7';
+import Blog8 from './Component/Blog8';
+import Blog9 from './Component/Blog9';
+import Blog10 from './Component/Blog10';
+import Blog11 from './Component/Blog11';
+import Blog12 from './Component/Blog12';
 
 
 class App extends Component {
@@ -43,13 +48,10 @@ class App extends Component {
            <Route path="/tv" component={Tv} />
            <Route path="/accessories" component={Accessories} />
            <Route path="/speaker" component={Speaker} />
-           <Route path="/printer" component={Printers}>
+           <Route path="/printer" component={Printers} />
            <Route path="/fashion" component={Cloth} />
            <Route path="/baby" component={Baby} />
-           <Route path="/blogs/:id" />
-             <Bloglist />
-           </Route>
-  
+           <Route path="/blogs/:id" component={Bloglist} />
           <Route path="/blog1/:id" component={Blog1} />
           <Route path="/blog2/:id" component ={Blog2} />
           <Route path="/blog3/:id" component ={Blog3} />
@@ -57,7 +59,11 @@ class App extends Component {
           <Route path="/blog5/:id" component ={Blog5} />
           <Route path="/blog6/:id" component ={Blog6} />
           <Route path="/blog7/:id" component ={Blog7} />
-         
+          <Route path="/blog8/:id" component ={Blog8} />
+          <Route path="/blog9/:id" component ={Blog9} />
+          <Route path="/blog10/:id" component ={Blog10} />
+          <Route path="/blog11/:id" component ={Blog11} />
+          <Route path="/blog12/:id" component ={Blog12} />
            </Switch>
            </Row>
         </Container>
