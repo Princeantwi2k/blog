@@ -1,0 +1,16 @@
+.footer {
+  background-color: black;
+  color: blanchedalmond;
+  width: 100%;
+  margin: 0%;
+  margin-top: 10px;
+  padding: 20px;
+  border: 0%;
+}
+.paras {
+  margin-top: 10px;
+}
+.para {
+  color: orange !important;
+  text-decoration: none !important;
+}
