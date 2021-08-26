@@ -13,3 +13,59 @@
 .super:hover {
   color: orangered !important;
 }
+.manu-caro {
+  margin-top: 120px;
+}
+.img {
+  height: 350px;
+  width: 100%;
+}
+.mobile {
+  padding: 9px;
+  list-style: none;
+}
+.center {
+  background-color: teal;
+  margin-top: 120px;
+  box-shadow: black;
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 3px;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.free {
+  width: 100%;
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 5px;
+}
+.icon {
+  width: 30px;
+  margin: 5px;
+}
+.icon-p {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+.icons {
+  text-decoration: none !important;
+  color: white !important;
+}
+.icons:hover {
+  color: orangered !important;
+}
+@media screen and (max-width: 400px) {
+  .img {
+    margin-left: 20px;
+    height: 300px;
+    width: 20%;
+  }
+}
