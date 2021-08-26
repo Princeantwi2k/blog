@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import call from "../../call.jpg";
+import call from "../../brand6.png";
 
 class Discount extends Component {
   render() {
