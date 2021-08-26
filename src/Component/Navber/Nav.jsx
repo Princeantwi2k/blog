@@ -2,30 +2,27 @@ import React, { Component } from "react";
 import { Navbar, FormControl, Form, Button } from "react-bootstrap";
 import { NavDropdown, Container, Row, Col } from "react-bootstrap";
 import "./Nav.css";
+import { connect } from "react-redux";
 
 class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      input: "",
-    };
+    this.state = {};
   }
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    this.setState({
-      input: "",
-    });
+    this.setState({});
   };
   render() {
     return (
       <>
-        <Container fluid className="navbar fixed-top">
+        <Container fluid className=" fixed-top">
           <Row>
             <Col sm={6} md={12}>
-              <Navbar>
+              <Navbar className="Navbar">
                 <h3
                   style={{
                     marginLeft: `10%`,
@@ -41,16 +38,17 @@ class Nav extends Component {
                 </h3>
                 <Form className="d-flex form" onSubmit={this.handleSubmit}>
                   <FormControl
-                    style={{ width: `400px` }}
                     type="search"
                     name="input"
                     onChange={this.handleChange}
-                    value={this.state.input}
+                    value={this.state}
                     placeholder="Search product, brands and categories"
                     className="mr-2 input"
                     aria-label="Search"
                   />
-                  <Button variant="warning">Search</Button>
+                  <Button variant="warning" size="sm">
+                    Search
+                  </Button>
                 </Form>
                 <NavDropdown
                   title="Account"
@@ -72,7 +70,7 @@ class Nav extends Component {
                   id="navbarScrollingDropdown"
                   className="drop"
                 >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                  <NavDropdown.Item to="/">Home</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">
                     Another action
                   </NavDropdown.Item>
@@ -89,5 +87,8 @@ class Nav extends Component {
     );
   }
 }
+const mapDispatchToProps = (state) => {
+  return { state: state };
+};
 
-export default Nav;
+export default connect(null, mapDispatchToProps)(Nav);
