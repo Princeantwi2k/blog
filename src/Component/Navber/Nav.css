@@ -1,5 +1,6 @@
 .form {
   margin-left: 10%;
+  width: 400px;
 }
 a {
   color: black;
@@ -18,4 +19,13 @@ a {
 .drop {
   margin-left: 4%;
   cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .navbar {
+    min-height: 40px;
+    background-attachment: fixed;
+    position: fixed;
+    background-color: aqua;
+    width: 100%;
+  }
 }
