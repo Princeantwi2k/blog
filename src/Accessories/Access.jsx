@@ -7,7 +7,7 @@ const Access = ({ access }) => {
   return (
     <>
       {access.map((access, id) => (
-        <Link to={`/blogs/${access.id}`} className="links">
+        <Link to={`/blog12/${access.id}`} className="links">
           <div key={id}>
             <Card
               style={{ width: "13.8rem", border: `none`, marginBottom: `10px` }}
