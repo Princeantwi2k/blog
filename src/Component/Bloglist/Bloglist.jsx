@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap";
 const Bloglist = ({ topsell }) => {
   const { id } = useParams();
 
-  let [item] = topsell.filter((item) => item.id == id);
+  let [item] = topsell.filter((item) => item.id === id);
   console.log(item);
 
   return (
