@@ -15,3 +15,32 @@ code {
   display: flex;
   flex-wrap: wrap;
 }
+.card {
+  width: "12rem";
+  border: "none";
+  margin-right: "30px";
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 1px 3px 5px gray;
+}
+.links {
+  color: black !important;
+  text-decoration: none !important;
+}
+.topic {
+  background-color: orangered;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.items-img {
+  padding: 20px;
+}
+.item {
+  height: 400px;
+  width: 100%;
+}
+.items-name {
+  padding-top: 50px;
+}
