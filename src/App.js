@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Nav from './Component/Navber/Nav'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import { Container, Row } from 'react-bootstrap';
-import Menu from './Component/Menu/Menu'
+
 import Mobile from './Component/Menu/Menu-Phones/Mobile';
 import Home from './Home/Home';
 import Laptops from './Laptops/Laptops';
@@ -28,6 +28,8 @@ import Blog9 from './Component/Blog9';
 import Blog10 from './Component/Blog10';
 import Blog11 from './Component/Blog11';
 import Blog12 from './Component/Blog12';
+import Login from './Component/Login';
+
 
 
 class App extends Component {
@@ -38,14 +40,13 @@ class App extends Component {
         
         <Container>
           <Row>
-           
           <Nav />
-            <Menu />
             <Switch>
            <Route exact path="/" component={Home} />
           <Route path="/mobile" component={Mobile} />
            <Route path="/laptops" component ={Laptops} />
            <Route path="/tv" component={Tv} />
+           <Route path="/login" component={Login} />
            <Route path="/accessories" component={Accessories} />
            <Route path="/speaker" component={Speaker} />
            <Route path="/printer" component={Printers} />
