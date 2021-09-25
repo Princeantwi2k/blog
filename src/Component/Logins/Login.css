@@ -1,0 +1,27 @@
+.logins {
+  margin-top: 20%;
+}
+.title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.info {
+  border-bottom: 2px solid orange;
+  margin-top: 3%;
+  padding: 0.5rem;
+  width: 80%;
+}
+label,
+input {
+  display: block;
+  border: none;
+}
+.infos {
+  margin-top: 10%;
+  border-bottom: 2px solid orange;
+  padding: 0.5rem;
+  width: 80%;
+}
+.submit {
+  margin-top: 2%;
+}
