@@ -16,7 +16,7 @@ class Nav extends Component {
   render() {
     return (
       <>
-        <Container fluid className=" fixed-top">
+        <Container fluid className=" fixed-top fixed-contianer">
           <Row>
             <Col sm={12} md={12}>
               <Navbar expand="lg" variant="light" bg="light">
