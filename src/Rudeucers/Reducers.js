@@ -11,6 +11,7 @@ import { ADD_SPEAKER } from "../Action/SpeakerAction";
 import { ADD_TVS } from "../Action/TvsAction";
 import { ADD_FASHION } from "../Component/Fashions/FashionAction";
 import { ADD_CLOTH } from "../Fashion/FashionAction";
+import { ADD_USER } from "../Action/AccessAction";
 
 const initialState ={
  
@@ -1547,11 +1548,8 @@ cloth: [
       "https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/18/006703/1.jpg?2177",
     id: "215",
   },
-],
-
-
-     
-    
+]
+        
 }
 
 let Reducers = (state = initialState,action) =>{
@@ -1582,6 +1580,8 @@ let Reducers = (state = initialState,action) =>{
                  return{...state,mobile:[...state.mobile,action.payload]};
                  case ADD_ACCESS:
                 return{...state,access:[...state.access,action.payload]};
+                case ADD_USER:
+                  return{...state,users:[...state.users,action.payload]};
                         
                 
             
@@ -1591,7 +1591,7 @@ let Reducers = (state = initialState,action) =>{
     
 
             default:
-                return state
+                return (state)
     }
 }
 export default Reducers
