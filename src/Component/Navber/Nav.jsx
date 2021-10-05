@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Navbar, Form, Button } from "react-bootstrap";
+import { Navbar, Form, Button, FormControl } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
+import { connect } from "react-redux";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 
@@ -8,6 +9,9 @@ class Nav extends Component {
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
+  handleSubmite() {
+    console.log("it has happen");
+  }
 
   render() {
     return (
@@ -35,11 +39,11 @@ class Nav extends Component {
                       </span>
                     </h3>
                   </Navbar.Brand>
-                  <Form className="d-flex ">
-                    <input
+                  <Form className="d-flex search">
+                    <FormControl
                       type="search"
-                      placeholder="Search ,product ,brands, and categories"
-                      className="mr-2 search"
+                      placeholder="phone,tv,fashion"
+                      className="mr-2 "
                       aria-label="Search"
                     />
                     <Button variant="warning">Search</Button>
@@ -62,4 +66,8 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+const mapStateToProps = (state) => {
+  return { brand: state };
+};
+
+export default connect(mapStateToProps)(Nav);
