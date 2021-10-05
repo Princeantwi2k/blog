@@ -31,7 +31,7 @@ class Home extends Component {
     return (
       <>
         <>
-          <Col>
+          <Col sm={3} md={3} lg={3}>
             <ul className="super-links">
               <Link to="/mobile" className="super">
                 <li className="mobile">Mobile phones</li>
@@ -59,7 +59,7 @@ class Home extends Component {
               </Link>
             </ul>
           </Col>
-          <Col>
+          <Col sm={6} md={6} lg={6}>
             <Carousel className="manu-caro">
               <Carousel.Item className="img">
                 <img className="d-block" src={pic1} alt="First slide" />
@@ -84,7 +84,7 @@ class Home extends Component {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col>
+          <Col sm={3} md={3} lg={3}>
             <ul className="center">
               <li>
                 <Link to="" className="icons">
