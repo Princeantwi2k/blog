@@ -2,13 +2,28 @@ import { useParams } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import React from "react";
 import { connect } from "react-redux";
-import { Button } from "react-bootstrap";
+import { Button, Popover, OverlayTrigger } from "react-bootstrap";
 
 const Bloglist = ({ topsell }) => {
   const { id } = useParams();
 
   let [item] = topsell.filter((item) => item.id === id);
   console.log(item);
+
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Header as="h3">REACH US ON </Popover.Header>
+      <Popover.Body>
+        <h5>0550300103</h5>
+        <h5>0572211378</h5>
+      </Popover.Body>
+    </Popover>
+  );
+  const Example = () => (
+    <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+      <Button variant="warning">Buy me</Button>
+    </OverlayTrigger>
+  );
 
   return (
     <div className="bloglist d-grid gap-2">
@@ -20,9 +35,7 @@ const Bloglist = ({ topsell }) => {
           <Col sm={8} md={8}>
             <h1 className="items-name">{item.name}</h1>
             <p>{item.price}</p>
-            <Button variant="primary" size="lg">
-              Buy Me{" "}
-            </Button>{" "}
+            <Example />
           </Col>
         </Row>
       </Container>
