@@ -32,6 +32,7 @@ import Login from './Component/Login';
 
 
 
+
 class App extends Component {
   render() {
     return (
@@ -47,6 +48,7 @@ class App extends Component {
            <Route path="/laptops" component ={Laptops} />
            <Route path="/tv" component={Tv} />
            <Route path="/login" component={Login} />
+        
            <Route path="/accessories" component={Accessories} />
            <Route path="/speaker" component={Speaker} />
            <Route path="/printer" component={Printers} />
