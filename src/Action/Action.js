@@ -8,3 +8,12 @@ export const Action =(product) =>{
         payload:product
     }
 }
+
+export const ADD_USER = "ADD_USER"
+
+export const Adduser =(user) =>{
+    return {
+        type: ADD_USER,
+        payload:user
+    }
+}
