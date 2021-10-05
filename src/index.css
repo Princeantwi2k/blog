@@ -46,3 +46,11 @@ code {
 .items-name {
   padding-top: 30%;
 }
+@media screen and (max-width: 480px) {
+  .card {
+    width: "0";
+    border: "none";
+    margin-left: 20%;
+    cursor: pointer;
+  }
+}
