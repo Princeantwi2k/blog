@@ -18,7 +18,7 @@ class Nav extends Component {
       <>
         <Container fluid className=" fixed-top">
           <Row>
-            <Col sm={6} md={12}>
+            <Col sm={12} md={12}>
               <Navbar expand="lg" variant="light" bg="light">
                 <Container fluid className="navbar">
                   <Navbar.Brand>
