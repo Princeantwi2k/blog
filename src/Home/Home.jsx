@@ -114,7 +114,9 @@ class Home extends Component {
         <Official />
         <h3 className="topic">Top selling items</h3>
         <div className="box">
-          <Product />
+          <Col sm={3} md={3} lg={3}>
+            <Product />
+          </Col>
         </div>
         <Deli />
         <h3 className="topic">Brand Olympics up to 50% off</h3>
