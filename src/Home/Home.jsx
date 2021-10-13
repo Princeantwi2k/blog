@@ -111,12 +111,12 @@ class Home extends Component {
             <img src={gif} alt="pic" className="free" />
           </Col>
         </>
-        <Official />
+        <Col md={12}>
+          <Official />
+        </Col>
         <h3 className="topic">Top selling items</h3>
         <div className="box">
-          <Col sm={3} md={3} lg={3}>
-            <Product />
-          </Col>
+          <Product />
         </div>
         <Deli />
         <h3 className="topic">Brand Olympics up to 50% off</h3>
