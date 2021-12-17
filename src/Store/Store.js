@@ -1,6 +1,13 @@
-import { createStore } from "redux";
-import Reducers from "../Rudeucers/Reducers";
+import firebase from "../Firebase/Config"
+import  Reducer from "../Rudeucers/Reducers"
+import {  createStore } from "redux";
 
-let store = createStore(Reducers)
+
+
+
+ var store = createStore(Reducer)
+
+
+
 
 export default store

@@ -455,7 +455,7 @@ const initialState ={
           id: "61",
         },
         {
-          name: "Lenovo V14-IGL -14.0″ Display – Intel Pentium Silver N5030",
+          name: "Lenovo V14-IGL -14.0″ Display  Intel Pentium Silver N5030",
           price: "GH₵ 2490.00",
           imgUrl:
             "https://gh.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/46/426903/1.jpg?3324",
