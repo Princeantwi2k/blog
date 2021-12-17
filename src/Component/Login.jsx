@@ -42,7 +42,7 @@ class Login extends Component {
         <Container>
           <Row>
             <Col sm={6} md={6}>
-              <Form className="logins">
+              <Form className="logins" onSubmit={this.handleSubmit}>
                 <h2 className="title">
                   Create your Blue<span style={{ color: `orange` }}>let</span>{" "}
                   account
@@ -89,7 +89,7 @@ class Login extends Component {
             </Col>
 
             <Col sm={6} md={6}>
-              <Form className="logins">
+              <Form className="logins" onSubmit={this.handleSubmit}>
                 <h2 className="title">Login</h2>
                 <input
                   type="email"

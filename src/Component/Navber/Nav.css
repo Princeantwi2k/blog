@@ -28,12 +28,13 @@
   margin-top: 20%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .navbar {
     min-height: 40px;
     background-attachment: fixed;
     position: fixed;
     background-color: aqua;
+    overflow: hidden;
     width: 100%;
   }
   .drop {
@@ -41,6 +42,11 @@
     text-decoration: none !important;
     padding: 5px;
     font-weight: bolder;
+  }
+  .search {
+    width: 200px;
+    margin-right: 5px;
+    border-radius: 10px;
   }
   .drops {
     color: orange !important;

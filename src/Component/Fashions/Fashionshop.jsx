@@ -13,7 +13,11 @@ const Fashionshop = ({ fashions }) => {
               style={{ width: "13.8rem", border: `none`, marginBottom: `10px` }}
               className="card"
             >
-              <Card.Img variant="top" src={fashions.imgUrl} />
+              <Card.Img
+                variant="top"
+                src={fashions.imgUrl}
+                style={{ height: 250, width: 180 }}
+              />
               <Card.Body>
                 <Card.Title> {fashions.name}</Card.Title>
                 <Card.Text>

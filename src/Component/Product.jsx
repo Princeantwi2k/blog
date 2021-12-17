@@ -18,7 +18,11 @@ const Product = ({ product }) => {
                 }}
                 className="card"
               >
-                <Card.Img variant="top" src={product.imgUrl} />
+                <Card.Img
+                  variant="top"
+                  src={product.imgUrl}
+                  style={{ height: 250, width: 180 }}
+                />
                 <Card.Body>
                   <Card.Title> {product.name}</Card.Title>
                   <Card.Text>

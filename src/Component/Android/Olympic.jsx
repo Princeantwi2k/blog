@@ -13,7 +13,11 @@ const Olympic = ({ olympic }) => {
               style={{ width: "13.8rem", border: `none`, marginBottom: `10px` }}
               className="card"
             >
-              <Card.Img variant="top" src={olympic.imgUrl} />
+              <Card.Img
+                variant="top"
+                src={olympic.imgUrl}
+                style={{ height: 250, width: 180 }}
+              />
               <Card.Body>
                 <Card.Title> {olympic.name}</Card.Title>
                 <Card.Text>

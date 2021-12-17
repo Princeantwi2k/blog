@@ -13,7 +13,12 @@ const IphoneXR = ({ andriod }) => {
               style={{ width: "13.6rem", border: `none`, marginBottom: `10px` }}
               className="card"
             >
-              <img variant="top" src={andriod.imgUrl} alt="imgUrl" />
+              <img
+                variant="top"
+                src={andriod.imgUrl}
+                alt="imgUrl"
+                style={{ height: 250, width: 180 }}
+              />
               <Card.Body>
                 <Card.Title> {andriod.name}</Card.Title>
                 <Card.Text>

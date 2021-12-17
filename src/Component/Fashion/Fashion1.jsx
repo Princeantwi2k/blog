@@ -13,6 +13,8 @@ import dress2 from "../../dress2.jpg";
 import dress3 from "../../dress3.jpg";
 import dress4 from "../../dress4.jpg";
 import dress5 from "../../dress5.jpg";
+import "./Fashion.css";
+
 class Fashion1 extends Component {
   render() {
     return (
