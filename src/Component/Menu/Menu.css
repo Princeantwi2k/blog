@@ -2,7 +2,7 @@
   box-sizing: content-box;
   background-color: teal;
   box-shadow: black;
-  margin-top: 120px;
+  margin-top: 10px;
   border: 2px solid gray;
   border-radius: 10px;
 }
@@ -14,7 +14,7 @@
   color: orangered !important;
 }
 .manu-caro {
-  margin-top: 120px;
+  margin-top: 10px;
 }
 .img {
   height: 350px;
@@ -26,7 +26,7 @@
 }
 .center {
   background-color: teal;
-  margin-top: 120px;
+  margin-top: 10px;
   box-shadow: black;
   border: 2px solid gray;
   border-radius: 15px;
@@ -43,7 +43,8 @@
   width: 100%;
   border: 2px solid gray;
   border-radius: 15px;
-  padding: 5px;
+  padding: 3px;
+  margin-bottom: 10px;
 }
 .icon {
   width: 30px;
@@ -62,10 +63,9 @@
 .icons:hover {
   color: orangered !important;
 }
-@media screen and (max-width: 400px) {
-  .img {
-    margin-left: 20px;
-    height: 300px;
-    width: 20%;
+@media screen and (max-width: 480px) {
+  .place {
+    display: flex;
+    flex-direction: column;
   }
 }

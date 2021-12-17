@@ -29,7 +29,6 @@ code {
   text-decoration: none !important;
 }
 .topic {
-  margin-top: 100px;
   background-color: orangered;
   text-align: center;
   color: white;
@@ -37,20 +36,33 @@ code {
 }
 .items-img {
   padding: 20px;
-  padding-top: 10%;
 }
 .item {
   height: 400px;
   width: 100%;
 }
 .items-name {
-  padding-top: 30%;
+  padding-top: 20px;
 }
 @media screen and (max-width: 480px) {
   .card {
-    width: "0";
+    width: "12rem";
     border: "none";
-    margin-left: 20%;
+    margin-left: "5px";
     cursor: pointer;
+  }
+  .card:hover {
+    transform: scale(0.5);
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .items-img {
+    padding: 20px;
+  }
+  .item {
+    height: 300px;
+    width: 100%;
   }
 }
