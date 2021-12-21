@@ -45,12 +45,9 @@
     font-weight: bolder;
   }
   .search {
-    width: 170px;
-    margin-right: 50px;
+    width: 160px;
+    margin-right: 5px;
     border-radius: 10px;
-  }
-  .searchbuttom {
-    width: 60px;
   }
   .drops {
     color: orange !important;
