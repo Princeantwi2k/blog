@@ -19,6 +19,7 @@ code {
   width: "12rem";
   border: "none";
   margin-right: "30px";
+  margin-top: 80px;
   cursor: pointer;
 }
 .card:hover {
@@ -32,6 +33,7 @@ code {
   background-color: orangered;
   text-align: center;
   color: white;
+
   padding: 20px;
 }
 .items-img {
