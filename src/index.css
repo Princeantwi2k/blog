@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -46,10 +47,14 @@ code {
   padding-top: 20px;
 }
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .card {
     width: "12rem";
     border: "none";
     margin-left: "5px";
+    margin-right: "0";
     cursor: pointer;
   }
   .card:hover {

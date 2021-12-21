@@ -60,28 +60,56 @@ class Home extends Component {
                 </Link>
               </ul>
             </Col>
-            <Col xs={6} md={6} lg={6}>
+            <Col xs={5} md={6} lg={6}>
               <Carousel className="manu-caro">
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic1} alt="First slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic1}
+                    alt="First slide"
+                  />
                 </Carousel.Item>
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic4} alt="Second slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic4}
+                    alt="Second slide"
+                  />
                 </Carousel.Item>
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic2} alt="Third slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic2}
+                    alt="Third slide"
+                  />
                 </Carousel.Item>
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic3} alt="Third slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic3}
+                    alt="Third slide"
+                  />
                 </Carousel.Item>
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic5} alt="Third slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic5}
+                    alt="Third slide"
+                  />
                 </Carousel.Item>
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic6} alt="Third slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic6}
+                    alt="Third slide"
+                  />
                 </Carousel.Item>
                 <Carousel.Item className="img">
-                  <img className="d-block" src={pic7} alt="Third slide" />
+                  <img
+                    className="d-block homepic"
+                    src={pic7}
+                    alt="Third slide"
+                  />
                 </Carousel.Item>
               </Carousel>
             </Col>
