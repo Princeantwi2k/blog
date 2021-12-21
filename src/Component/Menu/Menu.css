@@ -1,5 +1,5 @@
 .place {
-  display: inline-block;
+  display: flex;
   margin-top: 100px;
 }
 .super-links {
@@ -54,6 +54,10 @@
   width: 30px;
   margin: 5px;
 }
+.homepic {
+  height: 330px;
+  width: 100%;
+}
 .icon-p {
   text-align: center;
   padding: 0px;
@@ -69,6 +73,52 @@
 }
 @media screen and (max-width: 480px) {
   .place {
-    display: inline-block;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile {
+    padding: 9px;
+    text-align: center;
+    list-style: none;
+  }
+  .img {
+    height: 300px;
+    width: 100%;
+  }
+  .homepic {
+    height: 280px;
+    width: 100%;
+  }
+  .super-links {
+    box-sizing: content-box;
+    background-color: teal;
+    box-shadow: black;
+    margin-top: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    list-style: none;
+    width: 70%;
+    text-decoration: none;
+    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+  }
+  .manu-caro {
+    margin-top: 10px;
+  }
+  .center {
+    background-color: teal;
+    margin-top: 10px;
+    box-shadow: black;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 3px;
+    width: 100%;
+
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    font-size: 9px;
   }
 }
