@@ -1,3 +1,7 @@
+.place {
+  display: inline-block;
+  margin-top: 70px;
+}
 .super-links {
   box-sizing: content-box;
   background-color: teal;
