@@ -75,7 +75,6 @@
   .place {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
   }
   .mobile {
     padding: 9px;
