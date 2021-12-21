@@ -11,6 +11,7 @@
   background-size: cover;
   background-color: aqua;
   box-shadow: black;
+  z-index: 1;
 }
 .drop {
   color: black !important;
